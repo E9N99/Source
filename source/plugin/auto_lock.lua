@@ -1,7 +1,7 @@
 function auto(msg)
 text = nil
 if msg and msg.content and msg.content.text then
-xname =  (Redis:get(Fast.."Name:Bot") or "روزا") 
+xname =  (Redis:get(Fast.."Name:Bot") or "سيدثون") 
 text = msg.content.text.text
 if text:match("^"..xname.." (.*)$") then
 text = text:match("^"..xname.." (.*)$")
