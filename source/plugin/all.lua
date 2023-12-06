@@ -1,7 +1,7 @@
 function all(msg)
 text = nil
 if msg and msg.content and msg.content.text then
-xname =  (Redis:get(Fast.."Name:Bot") or "قيصر") 
+xname =  (Redis:get(Fast.."Name:Bot") or "سيدثوو") 
 text = msg.content.text.text
 if text:match("^"..xname.." (.*)$") then
 text = text:match("^"..xname.." (.*)$")
