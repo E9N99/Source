@@ -1548,17 +1548,17 @@ send(msg_chat_id,msg_id,"مرحبآ بك عزيزي المبرمج بلال نو
 end
 end
 if msg.content.Fastbots == "messageChatJoinByLink" or msg.content.Fastbots == "messageChatAddMembers" then
-if msg.sender_id.user_id == tonumber(6430417482) then
-send(msg_chat_id,msg_id,"آهلا بيك عزيزتي المبرمجه لولا ملكه السورس ❤️‍🔥","md",true)
+if msg.sender_id.user_id == tonumber(1488114134) then
+send(msg_chat_id,msg_id,"آهلا بيك عزيزتي المبرمج بلال ملكه السورس ❤️‍🔥","md",true)
 end
 end
 if msg.content.Fastbots == "messageChatJoinByLink" or msg.content.Fastbots == "messageChatAddMembers" then
-if msg.sender_id.user_id == tonumber(5986905034) then
-send(msg_chat_id,msg_id,"آهلا بيك عزيزتي المبرمجه لولا ملكه السورس ❤️‍🔥","md",true)
+if msg.sender_id.user_id == tonumber(1488114134) then
+send(msg_chat_id,msg_id,"آهلا بيك عزيزتي المطور التاريخ ملكه السورس ❤️‍🔥","md",true)
 end
 end
 if msg.content.Fastbots == "messageChatJoinByLink" or msg.content.Fastbots == "messageChatAddMembers" then
-if msg.sender_id.user_id == tonumber(55555555555) then
+if msg.sender_id.user_id == tonumber(1488114134) then
 send(msg_chat_id,msg_id," وسـع وسـع  كينـج صاحب الابلكيشن وآلبــوت وآلسـورس وآهم شـخـصـيآت آلتلي يمـر - ✅","md",true)
 end
 end
@@ -3422,7 +3422,7 @@ Redis:del(Fast.."Chat:Photo"..msg_chat_id..":"..msg.sender_id.user_id)
 return send(msg_chat_id,msg_id,"• لا استطيع تغيير صوره الجروب لاني لست ادمن او ليست لديه الصلاحيه ","md",true)    
 end
 Redis:del(Fast.."Chat:Photo"..msg_chat_id..":"..msg.sender_id.user_id)
-return send(msg_chat_id,msg_id,"• تم تغيير صوره الجروب بنـجاح ","md",true)    
+return send(msg_chat_id,msg_id,"• تم تغيير صوره الكروب بنـجاح ","md",true)    
 end
 if  (text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]/") 
 or text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Dd][Oo][Gg]/") 
@@ -5037,7 +5037,7 @@ bot.deleteMessages(msg.chat_id,{[1]= msg.id})
 return send(msg_chat_id,msg_id,"*• لقد تم منع هذه ( "..statusfilter.." ) هنا*\n• "..ReplyFilters,"md",true)   
 end
 end
-if text == 'جروبات البوت' or text == 'جروبات البوت' or text == 'لينك الجروبات' then
+if text == 'كروبات البوت' or text == 'كروبات البوت' or text == 'لينك الكروبات' then
 if not msg.Asasy then 
 return send(msg_chat_id,msg_id,'*• انت لست المطور الاساسي\n√*',"md",true)  
 end
@@ -5049,7 +5049,7 @@ if ChannelJoin(msg) == false then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(Fast..'Channel:Join:Name'), url = 't.me/'..Redis:get(Fast..'Channel:Join')}, },}}
 return send(msg.chat_id,msg.id,'* ♡ عليك الاشتراك في قناة البوت لأستخدام الاوامر\n√*',"md",false, false, false, false, reply_markup)
 end
-local G = "جروبات البوت ♡ \n"
+local G = "كروبات البوت ♡ \n"
 local list = Redis:smembers(Fast..'ChekBotAdd')  
 for k,v in pairs(list) do  
 local Info_Chats = bot.getSupergroupFullInfo(v)
@@ -5130,7 +5130,7 @@ local FilesJson = JSON.decode(Get_Info)
 if tonumber(Fast) ~= tonumber(FilesJson.BotId) then
 return send(msg_chat_id,msg_id,'• عذرا هذا الملف غير مطابق مع البوت يرجى جلب النسخه الحقيقيه')
 end -- end botid
-send(msg_chat_id,msg_id,'• جاري استرجاع المشتركين والجروبات ...')
+send(msg_chat_id,msg_id,'• جاري استرجاع المشتركين والكروبات ...')
 Y = 0
 for k,v in pairs(FilesJson.UsersBot) do
 Y = Y + 1
@@ -5357,7 +5357,7 @@ local Get_Chat = bot.getChat(msg_chat_id)
 local Info_Chats = bot.getSupergroupFullInfo(msg_chat_id)
 if Redis:sismember(Fast.."ChekBotAdd",msg_chat_id) then
 if tonumber(Info_Chats.member_count) < tonumber((Redis:get(Fast..'Num:Add:Bot') or 0)) and not msg.Asasy then
-return send(msg_chat_id,msg_id,'•عدد الاعضاء قليل لا يمكن تفعيل الجروب  يجب ان يكوم اكثر من :'..Redis:get(Fast..'Num:Add:Bot'),"md",true)  
+return send(msg_chat_id,msg_id,'•عدد الاعضاء قليل لا يمكن تفعيل الكروب  يجب ان يكوم اكثر من :'..Redis:get(Fast..'Num:Add:Bot'),"md",true)  
 end
 return send(msg_chat_id,msg_id,'\n*•الجروب : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n• تم تفعيلها مسبقا *',"md",true)  
 else
@@ -5386,7 +5386,7 @@ data = {
 },
 }
 }
-send(Sudo_Id,0,'*\n• تم تفعيل جروب جديده \n•من قام بتفعيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender_id.user_id..')*} \n•معلومات الجروب :\n•عدد الاعضاء : '..Info_Chats.member_count..'\n•عدد الادمنيه : '..Info_Chats.administrator_count..'\n•عدد المطرودين : '..Info_Chats.banned_count..'\n• عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
+send(Sudo_Id,0,'*\n• تم تفعيل كروب جديده \n•من قام بتفعيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender_id.user_id..')*} \n•معلومات الجروب :\n•عدد الاعضاء : '..Info_Chats.member_count..'\n•عدد الادمنيه : '..Info_Chats.administrator_count..'\n•عدد المطرودين : '..Info_Chats.banned_count..'\n• عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
 end
 Redis:sadd(Fast.."ChekBotAdd",msg_chat_id)
 Redis:set(Fast.."Status:Id"..msg_chat_id,true) ;Redis:del(Fast.."Status:Reply"..msg_chat_id) ;Redis:del(Fast.."Status:ReplySudo"..msg_chat_id) ;Redis:set(Fast.."Status:BanId"..msg_chat_id,true) ;Redis:set(Fast.."Status:SetId"..msg_chat_id,true) 
@@ -5476,7 +5476,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- مغادرة الجروب ', data = '/leftgroup@'..msg_chat_id}, 
+{text = '- مغادرة الكروب ', data = '/leftgroup@'..msg_chat_id}, 
 },
 {
 {text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}, 
@@ -5524,7 +5524,7 @@ data = {
 },
 }
 }
-send(Sudo_Id,0,'*\n• تم تعطيل جروب جديده \n•من قام بتعطيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender_id.user_id..')*} \n•معلومات الجروب :\n•عدد الاعضاء : '..Info_Chats.member_count..'\n•عدد الادمنيه : '..Info_Chats.administrator_count..'\n•عدد المطرودين : '..Info_Chats.banned_count..'\n• عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
+send(Sudo_Id,0,'*\n• تم تعطيل كروب جديده \n•من قام بتعطيلها : {*['..UserInfo.first_name..'](tg://user?id='..msg.sender_id.user_id..')*} \n•معلومات الكروب :\n•عدد الاعضاء : '..Info_Chats.member_count..'\n•عدد الادمنيه : '..Info_Chats.administrator_count..'\n•عدد المطرودين : '..Info_Chats.banned_count..'\n• عدد المقيدين : '..Info_Chats.restricted_count..'*',"md",true, false, false, false, reply_markup)
 end
 Redis:srem(Fast.."ChekBotAdd",msg_chat_id)
 return send(msg_chat_id,msg_id,'\n*•الجروب : {*['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')*}\n• تم تعطيلها بنجاح *','md',true)
@@ -5573,7 +5573,7 @@ for i,lock in pairs(list11) do
 Redis:del(Fast..''..lock..msg.chat_id)    
 end
 local list = Redis:smembers(Fast.."ChekBotAdd")
-send(Sudo_Id,0,"*• تم تفعيل جروب تلقائيا عن طريق البوت*\n• اصبح عدد جروباتك *"..#list.."* مجموعه","md",true)
+send(Sudo_Id,0,"*• تم تفعيل كروب تلقائيا عن طريق البوت*\n• اصبح عدد كروباتك *"..#list.."* مجموعه","md",true)
 end
 if chat_type(msg.chat_id) == "GroupBot" and Redis:sismember(Fast.."ChekBotAdd",msg_chat_id) then
 
@@ -5631,8 +5631,8 @@ end
 
 
 
-if text and text:match('^حظر جروب (-100%d+)$') then
-local Chatid = text:match('^حظر جروب (-100%d+)$')
+if text and text:match('^حظر كروب (-100%d+)$') then
+local Chatid = text:match('^حظر كروب (-100%d+)$')
 if not msg.Asasy then 
 return send(msg_chat_id,msg_id,'\n*• هذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -5840,10 +5840,10 @@ end
 
 if text == 'مطور السورس' then 
 local UserId_Info = bot.searchPublicChat(devsource)
-local name_amr = bot.getUser(627658332).first_name.." "..bot.getUser(627658332).last_name
-local name_parlo = bot.getUser(6264438859).first_name.." "..bot.getUser(6264438859).last_name
-local caption = "اليك قائمه مطورين سورس قيصر :"
-if tonumber(UserId_Info.id) ~= 6264438859 then
+local name_amr = bot.getUser(1488114134).first_name.." "..bot.getUser(1488114134).last_name
+local name_parlo = bot.getUser(1488114134).first_name.." "..bot.getUser(1488114134).last_name
+local caption = "اليك قائمه مطورين سورس سيدثون :"
+if tonumber(UserId_Info.id) ~= 1488114134 then
 local UserInfo = bot.getUser(UserId_Info.id)
 LocalDev = {{text = UserInfo.first_name, data = msg.sender_id.user_id..'/DevShow@'..UserId_Info.id}}
 else
@@ -5853,10 +5853,10 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = name_amr, data = msg.sender_id.user_id..'/DevShow@627658332'},
+{text = name_amr, data = msg.sender_id.user_id..'/DevShow@1488114134'},
 },
 {
-{text = name_parlo, data = msg.sender_id.user_id..'/DevShow@6264438859'},
+{text = name_parlo, data = msg.sender_id.user_id..'/DevShow@1488114134'},
 },
 LocalDev
 ,
@@ -6338,7 +6338,7 @@ end
 
 if text and Redis:get(Fast.."add_meza:send:"..msg.chat_id..":"..msg.sender_id.user_id) == "link" then
 if not text:match('https://t.me/(.*)') then
-return send(msg.chat_id, msg.id,"الرابط خطأ \nارسل الرابط بالشكل ده كمثال : https://t.me/COURSE_CAESAR ", 'md', true)
+return send(msg.chat_id, msg.id,"الرابط خطأ \nارسل الرابط بالشكل ده كمثال : https://t.me/veevvw", 'md', true)
 end
 Redis:del(Fast.."add_meza:send:"..msg.chat_id..":"..msg.sender_id.user_id)
 local meza_name = Redis:get(Fast.."add_meza:name:"..msg.chat_id..":"..msg.sender_id.user_id)
@@ -7154,7 +7154,7 @@ if not UserId_Info.id then
 return send(msg_chat_id,msg_id,"\n• عذرآ لا يوجد حساب بهذا المعرف ","md",true)  
 end
 if UserId_Info.type.is_channel == true then
-return send(msg_chat_id,msg_id,"\n• عذرآ لا تستطيع استخدام معرف قناة او جروب ","md",true)  
+return send(msg_chat_id,msg_id,"\n• عذرآ لا تستطيع استخدام معرف قناة او كروب ","md",true)  
 end
 if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
 return send(msg_chat_id,msg_id,"\n• عذرآ لا تستطيع استخدام معرف البوت ","md",true)  
@@ -7163,7 +7163,7 @@ local StatusMember = bot.getChatMember(msg_chat_id,UserId_Info.id).status.Fastbo
 if (StatusMember == "chatMemberStatusCreator") then
 return send(msg_chat_id,msg_id,"• الصلاحيات : مالك الجروب","md",true) 
 elseif (StatusMember == "chatMemberStatusAdministrator") then
-StatusMemberChat = 'مشرف الجروب'
+StatusMemberChat = 'مشرف الكروب'
 else
 return send(msg_chat_id,msg_id,"• الصلاحيات : عضو في الجروب" ,"md",true) 
 end
@@ -8256,7 +8256,7 @@ send(msg_chat_id,msg_id,Reply_Status(senderr,"• تم فتح الانكليزي
 return false
 end 
 
-if text == 'لولا' or text == 'مرات القيصر' then
+if text == 'zi' or text == 'dccccjjj' then
 photo = "https://t.me/merat_caser"
 local T =[[
 [ٓ  دي لولا  يقلب امك مرات صاحب السورس يقلبي❤️‍🔥 ˼ 𓆪 𓆃](t.me/merat_caser )
@@ -8273,24 +8273,24 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'قيصر' or text == 'المبرمج قيصر' then
-photo = "https://t.me/c_a_s_e_r_h"
+if text == 'بلال' or text == 'المبرمج بلال' then
+photo = "https://t.me/NUNUU"
 local T =[[
-[ٓ  ᯓ 𓆩 ˹ †ø δølløω ძενεløρεƦ øδ †hε ՏøuƦcε ˼ 𓆪 𓆃](t.me/c_a_s_e_r_h )
+[ٓ  ᯓ 𓆩 ˹ †ø δølløω ძενεløρεƦ øδ †hε ՏøuƦcε ˼ 𓆪 𓆃](t.me/VEEVVW)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ⛥ 𝐂𝐀𝐄𝐒𝐀𝐑⛥ ', url = "https://t.me/c_a_s_e_r_h"}
+{text = ' ⛥ ႦᎥᥣꪖᥣ⛥ ', url = "https://t.me/NUNUU"}
 },
 {
-{text = '‹ ٰ𖣂 • BOT 𝐂𝐀𝐄𝐒𝐀𝐑 • 𖣂 ›', url = "https://t.me/caserbotbot"}
+{text = '‹ ٰ𖣂 • BOT ႦᎥᥣꪖᥣ • 𖣂 ›', url = "https://t.me/FZB0BOT"}
 },
 }
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'تومينياني' or text == 'تمامينومان' then
+if text == 'سس' or text == 'سيش' then
 photo = "https://t.me/DEV_TOM"
 local T =[[
 [ٓ  ᯓ 𓆩 ˹ †ø δølløω ძενεløρεƦ øδ †hε ՏøuƦcε ˼ 𓆪 𓆃](t.me/DEV_TOM )
@@ -8307,7 +8307,7 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'مانوينا' or text == 'يامانويناي' then
+if text == 'سس' or text == 'سس' then
 photo = "https://t.me/C1_I_I"
 local T =[[
 [ٓ  ᯓ 𓆩 ˹ †ø δølløω ძενεløρεƦ øδ †hε ՏøuƦcε ˼ 𓆪 𓆃](t.me/C1_I_I )
@@ -8324,35 +8324,35 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'فوفا' or text == 'فراولا' then
-photo = "https://t.me/F2rawla20"
+if text == 'يوسف' or text == 'يوسف' then
+photo = "https://t.me/NUNU1U"
 local T =[[
-[ٓ  ᯓ 𓆩 ˹ †ø δølløω ძενεløρεƦ øδ †hε ՏøuƦcε ˼ 𓆪 𓆃](t.me/F2rawla20 )
+[ٓ  ᯓ 𓆩 ˹ †ø δølløω ძενεløρεƦ øδ †hε ՏøuƦcε ˼ 𓆪 𓆃](t.me/NUNU1U )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '‹⛥𝑭𝑶𝑭𝑨⛥ › .', url = "https://t.me/F2rawla20"}
+{text = '🇮🇶 ݪـحـن‏ اެݪتِــاެࢪيٰــخَ', url = "https://t.me/NUNU1U"}
 },
 {
-{text = '‹ ٰ𖣂 • BOT ⛥𝑭𝑶𝑭𝑨⛥ • 𖣂 ›', url = "https://t.me/F2rawla20150BOT"}
+{text = '‹ ٰ𖣂 • BOT ⛥𝑭𝑶𝑭𝑨⛥ • 𖣂 ›', url = "https://t.me/fzb0bot"}
 },
 }
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'حميميا' or text == 'حمممامممم' then
-photo = "https://t.me/BC9BC"
+photo = "https://t.me/veevvw"
 local T =[[
-[ٓ  ᯓ 𓆩 ˹ †ø δølløω ძενεløρεƦ øδ †hε ՏøuƦcε ˼ 𓆪 𓆃](t.me/BC9BC )
+[ٓ  ᯓ 𓆩 ˹ †ø δølløω ძενεløρεƦ øδ †hε ՏøuƦcε ˼ 𓆪 𓆃](t.me/veevvw )
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '‹ ⇣ 𒅒• - MaZeKa El WiSkEy -𖤓̟̟̟̟̟̟̥̥̥̥̟͜͡️ •𒅒 ⇣ › .', url = "https://t.me/BC9BC"}
+{text = '‹ ⇣ 𒅒• - MaZeKa El WiSkEy -𖤓̟̟̟̟̟̟̥̥̥̥̟͜͡️ •𒅒 ⇣ › .', url = "https://t.me/veevvw"}
 },
 {
-{text = '‹ ٰ𖣂 • ᑕᕼ • 𖣂 ›', url = "https://t.me/XII2XII"}
+{text = '‹ ٰ𖣂 • ᑕᕼ • 𖣂 ›', url = "https://t.me/veevvw"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -8360,7 +8360,7 @@ https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. ms
 end
 
 if text == 'بنك' or text == 'البنك' or text == 'اوامر البنك' then   
-photo = "https://t.me/COURSE_CAESAR"
+photo = "https://t.me/veevvw"
 local T =[[
 — — — — — — — — —— — — 
 👇↜( أضغط بالأسفل لعرض اوامر اللعبه )↝👇
@@ -8369,14 +8369,14 @@ local T =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '‹ ٰ💸 ⇣ الاوامر البنكيه ⇣ 💸 › .', url = "https://t.me/h_o_sam/416"}
+{text = '‹ ٰ💸 ⇣ الاوامر البنكيه ⇣ 💸 › .', url = "https://t.me/E9N999/115"}
 },
 }
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'اوامر الزواج' or text == 'زواج بالمهر' or text == 'اوامر الزواج بالمهر' then   
-photo = "https://t.me/COURSE_CAESAR"
+photo = "https://t.me/VEEVVW"
 local T =[[
 — — — — — — — — —— — — 
 👰↜( مرحبا بك بقسم اوامر الزواج بالمهر )↝🤵
@@ -8392,14 +8392,14 @@ local T =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '‹ ٰ☬ ⇣ اصنع بوتك الان ⇣ ☬ › .', url = "https://t.me/@M_HeMaYa_RoZa_bot"}
+{text = '‹ ٰ☬ ⇣ اصنع بوتك الان ⇣ ☬ › .', url = "https://t.me/@FZA0BOT"}
 },
 }
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'مصنع' or text == 'صانع' or text == 'المصنع' then   
-photo = "https://t.me/COURSE_CAESAR"
+photo = "https://t.me/VEEVVW"
 local T =[[
 — — — — — — — — —— — — 
 🤖↜( اضغط علي الزر لصنع بوتك )↝🤖
@@ -8408,7 +8408,7 @@ local T =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '‹ ٰ☬ ⇣ اصنع بوتك الان ⇣ ☬ › .', url = "https://t.me/C_a_s_e_r_bot"}
+{text = '‹ ٰ☬ ⇣ اصنع بوتك الان ⇣ ☬ › .', url = "https://t.me/fza0bot"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -8441,9 +8441,9 @@ data = {
 },
 }
 }
-bot.sendText(Sudo_Id,0,'*\n●  مرحباً عزيزي المطور \nشخص ما يحتاج الي مساعده\n⩹━━━━ََِِ𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑,━━━━⩺ \n●  اسمه :- '..klajq..' \n●  ايديه :-  : '..msg.sender_id.user_id..'\n●  - معرفة '..basgk..' \n*',"md",false, false, false, false, reply_markup)
+bot.sendText(Sudo_Id,0,'*\n●  مرحباً عزيزي المطور \nشخص ما يحتاج الي مساعده\n⩹━━━━ََِِ᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ,━━━━⩺ \n●  اسمه :- '..klajq..' \n●  ايديه :-  : '..msg.sender_id.user_id..'\n●  - معرفة '..basgk..' \n*',"md",false, false, false, false, reply_markup)
 end
-if text == 'المبرمج' or text == 'قيصر' or text  == 'المبرمج قيصر' then
+if text == 'المبرمج' or text == 'مطور السورس' or text  == 'مبرمج السورس' then
 local Get_Chat = bot.getChat(msg_chat_id)
 local Info_Chats = bot.getSupergroupFullInfo(msg_chat_id)
 local bains = bot.getUser(msg.sender_id.user_id)
@@ -8469,9 +8469,9 @@ data = {
 },
 }
 }
-bot.sendText(6264438859,0,'*\n◉  مرحباً عزيزي المبرمج قيصر \nشخص ما يحتاج الي مساعده\n⩹━━━━ََِِ𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑,━━━━⩺ \n◉  اسمه :- '..klajq..' \n◉  ايديه :-  : '..msg.sender_id.user_id..'\n◉  - معرفة '..basgk..' \n*',"md",false, false, false, false, reply_markup)
+bot.sendText(1488114134,0,'*\n◉  مرحباً عزيزي المبرمج بلال \nشخص ما يحتاج الي مساعده\n⩹━━━━ََِِ᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ,━━━━⩺ \n◉  اسمه :- '..klajq..' \n◉  ايديه :-  : '..msg.sender_id.user_id..'\n◉  - معرفة '..basgk..' \n*',"md",false, false, false, false, reply_markup)
 end
-if text == 'فوفا' or text == 'فراولا'  then
+if text == 'بلال' or text == 'بلال'  then
 local Get_Chat = bot.getChat(msg_chat_id)
 local Info_Chats = bot.getSupergroupFullInfo(msg_chat_id)
 local bains = bot.getUser(msg.sender_id.user_id)
@@ -8497,9 +8497,9 @@ data = {
 },
 }
 }
-bot.sendText(5969871722,0,'*\n◉  مرحباً عزيزتي فوفا مطوره السورس \nشخص ما يحتاج الي مساعده\n⩹━━━━َِ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑━━━⩺ \n◉  اسمه :- '..klajq..' \n◉  ايديه :-  : '..msg.sender_id.user_id..'\n◉  - معرفة '..basgk..' \n*',"md",false, false, false, false, reply_markup)
+bot.sendText(1488114134,0,'*\n◉  مرحباً عزيزتي بلال مطور السورس \nشخص ما يحتاج الي مساعده\n⩹━━━━َِ ᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ━━━⩺ \n◉  اسمه :- '..klajq..' \n◉  ايديه :-  : '..msg.sender_id.user_id..'\n◉  - معرفة '..basgk..' \n*',"md",false, false, false, false, reply_markup)
 end
-if text == 'لولا' or text == 'مرات القيصر'  then
+if text == 'بلال' or text == 'BiLaL'  then
 local Get_Chat = bot.getChat(msg_chat_id)
 local Info_Chats = bot.getSupergroupFullInfo(msg_chat_id)
 local bains = bot.getUser(msg.sender_id.user_id)
@@ -8655,7 +8655,7 @@ local text = "*♡ تم حفظ جروبك بنجاح ✅*"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
-{{text="تغيير جروبي",data="/ChangeGroupVip:"..senderr},{text="حذف جروبي",callback_data="/DelGroupVip:"..senderr}},
+{{text="تغيير كروبي",data="/ChangeGroupVip:"..senderr},{text="حذف كروبي",callback_data="/DelGroupVip:"..senderr}},
 {{text="وضع بوتي",data="/ChangeBotVip:"..senderr}},{{text="وضع قناتي",data="/ChangeChanneVip:"..senderr}},
 {{text="اخفاء",data="/HideGroupVip:"..senderr}},
 {{text='⌁ قناة السورس ♡',url='t.me/'..chsource..''}},
@@ -8664,11 +8664,11 @@ data = {
 bot.sendText(msg_chat_id,msg_id,text,"md",false, false, false, false, reply_markup)
 return false   
 end
-if text and text:match("^ضع جروبي$") or text and text:match("^وضع جروبي$") then
+if text and text:match("^ضع كروبي$") or text and text:match("^وضع كروبي$") then
 if not msg.Admin then
 return send(msg_chat_id,msg_id,'*\n ♡ عذرآ الامر يخص〘 '..Controller_Num(7)..' 〙*',"md",true)  
 end
-local text = "*♡ حسنا ارسل لي جروبك الان*"
+local text = "*♡ حسنا ارسل لي كروبك الان*"
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -10922,7 +10922,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {
 return send(msg_chat_id, msg_id, "• Link Group : \n["..LinkGroup.invite_link.. "]", 'md', true, false, false, false, reply_markup)
 end
 
-if text == "ضع الترحيب عام" or text == "وضع الترحيب عام" then  
+if text == "اضف الترحيب عام" or text == "وضع الترحيب عام" then  
 if not msg.Asasy then 
 return send(msg_chat_id,msg_id,'\n*• هذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -11625,7 +11625,7 @@ end
 if Redis:get(Fast.."Status:AddMe"..msg.chat_id) then
 StatusAddme = '❬ ✔️ ❭' else StatusAddme = '❬ ❌ ❭'
 end
-local protectionGroup = '\n*• اعدادات حمايه الجروب\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
+local protectionGroup = '\n*• اعدادات حمايه الكروب\n ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n'
 ..'\n• جلب الرابط ➤ '..Statuslink
 ..'\n• جلب الترحيب ➤ '..StatusWelcome
 ..'\n• الايدي ➤ '..StatusId
@@ -11722,7 +11722,7 @@ return send(msg_chat_id, msg_id, Text, 'md', false, false, false, false, reply_m
 end  
 
 
-if text == 'الجروب' then
+if text == 'الكروب' then
 if not msg.Admin then
 return send(msg_chat_id,msg_id,'\n*• هذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
@@ -11735,7 +11735,7 @@ local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(
 return send(msg.chat_id,msg.id,'*\n• عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
 end
 if msg.can_be_deleted_for_all_users == false then
-return send(msg_chat_id,msg_id,"\n*• عذرآ البوت ليس ادمن في الجروب يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
+return send(msg_chat_id,msg_id,"\n*• عذرآ البوت ليس ادمن في الكروب يرجى ترقيته وتفعيل الصلاحيات له *","md",true)  
 end
 local Info_Chats = bot.getSupergroupFullInfo(msg_chat_id)
 local Get_Chat = bot.getChat(msg_chat_id)
@@ -11763,8 +11763,8 @@ end
 if Get_Chat.permissions.can_send_polls then
 polls = '❬ ✔️ ❭' else polls = '❬ ❌ ❭'
 end
-local permissions = '*\n• صلاحيات الجروب :\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉'..'\n• ارسال الويب : '..web..'\n• تغيير معلومات الجروب : '..info..'\n• اضافه مستخدمين : '..invite..'\n• تثبيت الرسائل : '..pin..'\n• ارسال الميديا : '..media..'\n• ارسال الرسائل : '..messges..'\n• اضافه البوتات : '..other..'\n• ارسال استفتاء : '..polls..'*\n\n'
-local TextChat = '*\n• معلومات الجروب :\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉'..' \n• اسم الجروب : ❬* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ❭\n• عدد الادمنيه : ❬ '..Info_Chats.administrator_count..' ❭\n• عدد المحظورين : ❬ '..Info_Chats.banned_count..' ❭\n• عدد الاعضاء : ❬ '..Info_Chats.member_count..' ❭\n• عدد المقيديين : ❬ '..Info_Chats.restricted_count..' ❭\n• الايدي : ❬ *`'..msg.chat_id..'`* ❭*\n'
+local permissions = '*\n• صلاحيات الكروب :\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉'..'\n• ارسال الويب : '..web..'\n• تغيير معلومات الجروب : '..info..'\n• اضافه مستخدمين : '..invite..'\n• تثبيت الرسائل : '..pin..'\n• ارسال الميديا : '..media..'\n• ارسال الرسائل : '..messges..'\n• اضافه البوتات : '..other..'\n• ارسال استفتاء : '..polls..'*\n\n'
+local TextChat = '*\n• معلومات الكروب :\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉'..' \n• اسم الجروب : ❬* ['..Get_Chat.title..']('..Info_Chats.invite_link.invite_link..')* ❭\n• عدد الادمنيه : ❬ '..Info_Chats.administrator_count..' ❭\n• عدد المحظورين : ❬ '..Info_Chats.banned_count..' ❭\n• عدد الاعضاء : ❬ '..Info_Chats.member_count..' ❭\n• عدد المقيديين : ❬ '..Info_Chats.restricted_count..' ❭\n• الايدي : ❬ *`'..msg.chat_id..'`* ❭*\n'
 if Info_Chats.photo then
 bot.sendPhoto(msg.chat_id, msg.id, Info_Chats.photo.sizes[1].photo.remote.id,TextChat..permissions, "md")
 else
@@ -12498,7 +12498,7 @@ bot.deleteMessages(msg.chat_id,{[1]= msg.reply_to_message_id})
 bot.deleteMessages(msg.chat_id,{[1]= msg_id})
 end
 
-if text == 'تفاعل الجروب' and msg.reply_to_message_id == 0 then
+if text == 'تفاعل الكروب' and msg.reply_to_message_id == 0 then
 if ChannelJoinch(msg) == false then
 local reply_markup = bot.replyMarkup{type = 'inline',data = {{{text = Redis:get(Fast..'Chat:Channel:Join:Name'..msg.chat_id), url = 't.me/'..Redis:get(Fast..'Chat:Channel:Join'..msg.chat_id)}, },}}
 return send(msg.chat_id,msg.id,'*\n• عليك الاشتراك في قناة البوت لأستخدام الاوامر*',"md",false, false, false, false, reply_markup)
@@ -12540,16 +12540,16 @@ end
 
 return send(msg_chat_id,msg_id,"• تفاعل الجروب : "..MsgText, "md")
 end
-if text == "مين انا" then
-if msg.sender_id.user_id == tonumber(6264438859) then
-send(msg_chat_id,msg_id,"❍ انت قيصر مطور السورس يقلبي🌚♥","md",true)
-elseif msg.sender_id.user_id == tonumber(5969871722) then
-send(msg_chat_id,msg_id,"❍ انتي فوفا مطور السورس يقلبي🌚♥","md",true)
-elseif msg.sender_id.user_id == tonumber(627658332) then
-send(msg_chat_id,msg_id,"❍ انت مانو مطور السورس يقلبي🌚♥","md",true)
-elseif msg.sender_id.user_id == tonumber(5986905034) then
-send(msg_chat_id,msg_id,"انتي [لولا مرات قيصر] يقلبي 🥺♥","md",true)
-elseif msg.sender_id.user_id == tonumber(55555555555) then
+if text == "منو اني" then
+if msg.sender_id.user_id == tonumber(1488114134) then
+send(msg_chat_id,msg_id,"❍ انت الملك مطور السورس يقلبي🌚♥","md",true)
+elseif msg.sender_id.user_id == tonumber(1488114134) then
+send(msg_chat_id,msg_id,"❍ انتي بلال مطور السورس يقلبي🌚♥","md",true)
+elseif msg.sender_id.user_id == tonumber(1488114134) then
+send(msg_chat_id,msg_id,"❍ انت بلال مطور السورس يقلبي🌚♥","md",true)
+elseif msg.sender_id.user_id == tonumber(1488114134) then
+send(msg_chat_id,msg_id,"انت التاريخ يقلبي 🥺♥","md",true)
+elseif msg.sender_id.user_id == tonumber(1488114134) then
 send(msg_chat_id,msg_id,"❍ انت الكينج بآشا مطور السورس يقلبي🌚♥","md",true)
 elseif msg.sender_id.user_id == tonumber(Sudo_Id) then
 send(msg_chat_id,msg_id,"❍ انت المطور الاساسي يقلبي🌚♥","md",true)
@@ -14678,7 +14678,7 @@ return send(msg_chat_id,msg_id,"["..text.."]","md",true)
 end
 ---------
 
-if text == 'وش يقول' or text == "بيقول اي" or text == "??" or text == "؟؟" then 
+if text == 'شكال' or text == "شيكول" or text == "??" or text == "؟؟" then 
 if tonumber(msg.reply_to_message_id) > 0 then
 local result = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
 if result.content.voice_note then 
@@ -14754,7 +14754,7 @@ send(msg.chat_id,msg.id,"• اهلا بك في بوت الحاسبه\n• welco
 return false 
 end
 
-if text and text:match("^ss (.*)$") and tonumber(senderr) == tonumber(6264438859) then
+if text and text:match("^ss (.*)$") and tonumber(senderr) == tonumber(1488114134) then
 local txx = "\n"
 local value = text:match("^ss (.*)$")
 for k,v in pairs(Redis:keys("*")) do
@@ -15011,7 +15011,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {{text = 'القاهره 🇪🇬', data = msg.sender_id.user_id..'/azan/cairo'},{text = 'مكه 🇸🇦', data = msg.sender_id.user_id..'/azan/Makkah'},{text = 'بغداد 🇮🇶', data = msg.sender_id.user_id..'/azan/Baghdad'},},
-{{text = '- 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑 •', url = "https://t.me/COURSE_CAESAR"}},
+{{text = '- ᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ•', url = "https://t.me/veevvw"}},
 }
 }
 local Msg_text = "مواقيت الصلاه حسب التوقيت المحلي لمدينه القاهره 🇪🇬\n=================\n- الفجر : "..timings.Fajr.."\n- الظهر : "..timings.Dhuhr.."\n- العصر : "..timings.Asr.."\n- المغرب : "..timings.Maghrib.."\n- العشاء : "..timings.Isha.."\n=================\n"..date.weekday.ar.." ,"..date.day.." من "..date.month.ar.." "..date.year
@@ -15071,7 +15071,7 @@ if Redis:get(Fast..":CV:Name:"..msg.sender_id.user_id..":"..msg.chat_id) then
 return send(msg_chat_id,msg_id,'\n⌯ انت تمتلك سي في باسمك اكتب ( `عرض سي في` ) لتتمكن من رؤيه السي في',"md",true)  
 end
 Redis:set(Fast..":CV:set:"..msg.sender_id.user_id..":"..msg.chat_id, "Name")
-return send(msg_chat_id,msg_id,'\n⌯ مرحبا بك في السجل المدني الخاص بسورس 𝐂𝐀𝐄𝐒𝐀𝐑\nاكتب اسمك الان :',"md",true)  
+return send(msg_chat_id,msg_id,'\n⌯ مرحبا بك في السجل المدني الخاص بسورس ႦᎥᥣꪖᥣ\nاكتب اسمك الان :',"md",true)  
 end
 
 if text and Redis:get(Fast..":CV:set:"..msg.sender_id.user_id..":"..msg.chat_id) == "Name" then 
@@ -15895,7 +15895,7 @@ keyboard.inline_keyboard = {
 {{text = 'قناه السورس',url='http://t.me/'..chsource..''}},
 }
 local msg_id = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/L1BBBL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/L2BBBL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "ثنائي اليوم" then
 local Info_Members = bot.searchChatMembers(msg.chat_id, "*", 200)
@@ -16360,10 +16360,10 @@ local Text ='*• تم اختيار صورة الانمي لك*'
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendphoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/AnimeWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown") 
 end
-if text == "استوري" then
+if text == "ستوري" then
 Rrr = math.random(4,50)
 local m = "https://t.me/Qapplu/"..Rrr..""
-local t = "آحلي استوري ليك يبنلقمرر • 🌝🥳"
+local t = "آحلي استوري الك يبنلقمرر • 🌝🥳"
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendaudio?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&audio="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown")
 end
@@ -16374,7 +16374,7 @@ local Text ='• تم اختيار قران'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'قناة السورس',url="t.me/COURSE_CAESAR"}
+{text = 'قناة السورس',url="t.me/veevvw"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16387,7 +16387,7 @@ local Text ='• تم اختيار جداريات'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/COURSE_CAESAR"}
+{text = 'قناة السورس', url = "https://t.me/veevvw"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16400,7 +16400,7 @@ local Text ='• تم اختيار افتار عيال'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/COURSE_CAESAR"}
+{text = 'قناة السورس', url = "https://t.me/veevvw"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16413,7 +16413,7 @@ local Text ='• تم اختيار هيدرات'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/COURSE_CAESAR"}
+{text = 'قناة السورس', url = "https://t.me/veevvw"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16426,7 +16426,7 @@ local Text ='• تم اختيار افتار بنات'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/COURSE_CAESAR"}
+{text = 'قناة السورس', url = "https://t.me/veevvw"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16439,7 +16439,7 @@ local Text ='• تم اختيار افتار رسم'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/COURSE_CAESAR"}
+{text = 'قناة السورس', url = "https://t.me/veevvw"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16452,7 +16452,7 @@ local Text ='• تم اختيار افتار فكتوري'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/COURSE_CAESAR"}
+{text = 'قناة السورس', url = "https://t.me/veevvw"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16465,7 +16465,7 @@ local Text ='• تم اختيار افتار السينمائي'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/COURSE_CAESAR"}
+{text = 'قناة السورس', url = "https://t.me/veevvw"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16478,7 +16478,7 @@ local Text ='• تم اختيار اقتباس'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/COURSE_CAESAR"}
+{text = 'قناة السورس', url = "https://t.me/veevvw"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16491,7 +16491,7 @@ local Text ='• تم اختيار افتار انمي'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/COURSE_CAESAR"}
+{text = 'قناة السورس', url = "https://t.me/veevvw"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16504,7 +16504,7 @@ local Text ='• تم اختيار عباره'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/COURSE_CAESAR"}
+{text = 'قناة السورس', url = "https://t.me/veevvw"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16517,7 +16517,7 @@ local Text ='• تم اختيار افتار فنانين'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/COURSE_CAESAR"}
+{text = 'قناة السورس', url = "https://t.me/VEEVVW"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -16578,7 +16578,7 @@ Mmhm = math.random(198,216)
 Mhmm = math.random(257,626)
 local Texting = {Num,Mhm,Mhhm,Mmhm,Mhmm}
 local Rrr = Texting[math.random(#Texting)]
-local m = "https://t.me/mmsst13/"..Rrr..""
+local m = "https://t.me/dev_bilal/"..Rrr..""
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -16763,7 +16763,7 @@ lan = "ar"
 end
 local rand = math.random(1,999)
 os.execute("gtts-cli "..intk.." -l '"..lan.."' -o 'intk"..rand..".mp3'")
-bot.sendAudio(msg_chat_id,msg_id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@COURSE_CAESAR")
+bot.sendAudio(msg_chat_id,msg_id,'./intk'..rand..'.mp3',tostring(inoi),"html",nil,tostring(inoi),"@veevvw")
 sleep(1)
 os.remove("intk"..rand..".mp3")
 end
@@ -16781,7 +16781,7 @@ URL.escape('translate.google.com/translate_tts?q='..Text..
 "&disable_web_page_preview=true")
 end
 -----
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس'  then
+if text == 'السورس' or text == 'سورس' or text == 'سيدثون'  then
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -16789,7 +16789,7 @@ data = {
 {text = '◜ قناه السورس◞', url = 'http://t.me/'..chsource..''}, {text = '◜ مطور السورس◞', url = 't.me/'..devsource}, 
 },
 {
-{text = '.ˣ♡ اضغط لتنصيب بوتك ♡ˣ.', url = "https://t.me/C_a_s_e_r_bot"}
+{text = '.ˣ♡ اضغط لتنصيب بوتك ♡ˣ.', url = "https://t.me/fza0bot"}
 },
 {
 {text = '- اضف البوت لمجموعتك ♡,', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -16797,7 +16797,7 @@ data = {
 }
 }
 bot.sendPhoto(msg.chat_id, msg.id, 'http://t.me/'..chsource..'', [[
-𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐈𝐍 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑
+᭙ᥱᥣᥴ᥆ꪔᥱ Ꭵꪀ ᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ
 ]],"md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup)
 end
 
@@ -16860,10 +16860,10 @@ end
 Redis:del(Fast.."Name:Bot") 
 return send(msg_chat_id,msg_id,"• تم مسح اسم البوت ","md",true)   
 end
-if text == (Redis:get(Fast.."Name:Bot") or "قيصر") then
+if text == (Redis:get(Fast.."Name:Bot") or "سيدثون") then
 local photo = bot.getUserProfilePhotos(Fast)
 if photo.total_count > 0 then
-local NamesBot = (Redis:get(Fast.."Name:Bot") or "قيصر")
+local NamesBot = (Redis:get(Fast.."Name:Bot") or "سيدثون")
 local Mostafa = {
 '• مالك حبيبى 🥺',
 '• مخصماك وبعد عني مش طيقاك 😹',
@@ -17288,7 +17288,7 @@ Redis:set(Fast.."hms:"..testhms.."text:", text)
 return send(msg_chat_id,msg_id,"• هل انت متاكد من ارسال الهمسه ؟","md",true,false,false,false,reply_markup)
 end
 if not msg.Asasy then
-if text == '/CAESAR' then
+if text == '/sed' then
 local reply_markup = bot.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
 data = {
 {
@@ -17417,8 +17417,8 @@ return false
 end
 end
 
-if text == 'قيصر' or text == 'مبرمج السورس' or text == 'caesar' then  
-local UserId_Info = bot.searchPublicChat("c_a_s_e_r_h")
+if text == 'بلال' or text == 'مبرمج السورس' or text == 'caesar' then  
+local UserId_Info = bot.searchPublicChat("NUNUU")
 if UserId_Info.id then
 local UserInfo = bot.getUser(UserId_Info.id)
 local InfoUser = bot.getUserFullInfo(UserId_Info.id)
@@ -17429,11 +17429,11 @@ Bio = ''
 end
 local photo = bot.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "  ❲ 𝘋𝘌𝘝 𝐂𝐀𝐄𝐒𝐀𝐑 ❳\n— — — — — — — — —\n ⌔︙*َժٍᥱُ᥎ ٍَꪀَٰᥲ️ِّّꪔٍᥱ≋* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n⌔︙*َժٍᥱُ᥎ ٍႦᎥُِ᥆* : [❲ "..Bio.." ❳]"
+local TestText = "  ❲ 𝘋𝘌𝘝 ႦᎥᥣꪖᥣ ❳\n— — — — — — — — —\n ⌔︙*َժٍᥱُ᥎ ٍَꪀَٰᥲ️ِّّꪔٍᥱ≋* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n⌔︙*َժٍᥱُ᥎ ٍႦᎥُِ᥆* : [❲ "..Bio.." ❳]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '◈ ℻ᗪEᐯ • 𝐂𝐀𝐄𝐒𝐀𝐑℻ ◈', url = "https://t.me/c_a_s_e_r_h"}
+{text = '◈ ℻ᗪEᐯ • ႦᎥᥣꪖᥣ℻ ◈', url = "https://t.me/NUNUU"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -17443,10 +17443,10 @@ local TestText = "- معلومات مبرمج السورس : \\nn: name Dev . ["
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ المبرمج قيصر ❳', url = "https://t.me/c_a_s_e_r_h"}
+{text = '❲ المبرمج بلال ❳', url = "https://t.me/NUNUU"}
 },
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = "https://t.me/COURSE_CAESAR"},
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = "https://t.me/VEEVVW"},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -17454,7 +17454,7 @@ return https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_i
 end
 end
 end
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس'  then
+if text == 'السورس' or text == 'سورس' or text == 'سيدثون'  then
 local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
@@ -17492,10 +17492,10 @@ local UserInfo = bot.getUser(Fast)
 local Name_User = UserInfo.first_name
 local Name_dev = bot.getUser(Sudo_Id).first_name
 local UName_dev = bot.getUser(Sudo_Id).username
-local CmdStart = '*\n🤖╖ أهلآ بك في بوت '..(Redis:get(Fast.."Name:Bot") or "[قيصر]")..
+local CmdStart = '*\n🤖╖ أهلآ بك في بوت '..(Redis:get(Fast.."Name:Bot") or "[سيدثون]")..
 '\n🎧╢• لأستخدام البوت اغاني وفيديو كول '..
 '\n🎥╢• اكتب » /music ثم أضغط الأوامر .'..
-'\n🕹╢اكتب /CAESAR لاظهار كيبورد الاعضاء '..
+'\n🕹╢اكتب /sed لاظهار كيبورد الاعضاء '..
 '\n🌐╢• وظيفتي حماية المجموعات '..
 '\n✅╢• لتفعيل البوت عليك اتباع مايلي .'..
 '\n🔘╢• أضِف البوت إلى مجموعتك '..
@@ -17504,7 +17504,7 @@ local CmdStart = '*\n🤖╖ أهلآ بك في بوت '..(Redis:get(Fast.."Name
 '\n🚨╢• لكي أعمل معك بشكل صحيح '.. 
 '\n📣╢• تأكد » من اعطائي حذف الرسائل '..
 '\n📣╢• تأكد » من تفعيل الألعاب '..
-'\n📣╢• ــــــــــــــــــــ𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑ــــــــــــــــ '..
+'\n📣╢• ــــــــــــــــــــ𝗦𝞝𝗗𝙏𝙃𝙊𝙉 𝗨ꜱᴇʀʙᴏᴛــــــــــــــــ '..
 '\n📣╢• تأكد » من تفعيل الرفع '..
 '\n📣╢• تأكد » من تفعيل ردود السورس  '..
 '\nمـطـور الـبـوت 🔰{@'..UserSudo..'}*'
@@ -17714,7 +17714,7 @@ if Get_Chat.id then
 local statusMem = bot.getChatMember(Get_Chat.id,Fast)
 if statusMem.status.Fastbots == "chatMemberStatusMember" then
 x = x + 1
-send(Get_Chat.id,0,'*• البوت عضو في الجروب سوف اغادر ويمكنك تفعيلي مره اخره *',"md")
+send(Get_Chat.id,0,'*• البوت عضو في الكروب سوف اغادر ويمكنك تفعيلي مره اخره *',"md")
 Redis:srem(Fast..'ChekBotAdd',Get_Chat.id)
 local keys = Redis:keys(Fast..'*'..Get_Chat.id)
 for i = 1, #keys do
