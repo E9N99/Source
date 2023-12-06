@@ -44,7 +44,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -55,7 +55,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -66,7 +66,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -77,7 +77,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -88,7 +88,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -99,7 +99,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -110,7 +110,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -121,7 +121,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -132,7 +132,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -143,7 +143,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -154,7 +154,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -165,7 +165,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -176,7 +176,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -187,7 +187,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -198,7 +198,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -209,7 +209,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -220,7 +220,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -231,7 +231,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -242,7 +242,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -253,7 +253,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -264,7 +264,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -275,7 +275,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -286,7 +286,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -297,7 +297,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -308,7 +308,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -319,7 +319,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -330,7 +330,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -341,7 +341,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -352,7 +352,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -363,7 +363,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -374,7 +374,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -385,7 +385,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -396,7 +396,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -407,7 +407,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -418,7 +418,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -429,7 +429,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -440,7 +440,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -451,7 +451,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -462,7 +462,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -473,7 +473,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -484,7 +484,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -495,7 +495,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -506,7 +506,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -517,7 +517,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -528,7 +528,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -539,7 +539,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
@@ -550,7 +550,7 @@ local reply_markup = bot.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐀𝐄𝐒𝐀𝐑', url = 't.me/COURSE_CAESAR'}, 
+{text = '᥉᥆ᥙᖇᥴᥱ ᥉ᥱძƚɦ᥆ꪀ', url = 't.me/VEEVVW'}, 
 },
 }
 }
