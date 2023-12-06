@@ -58,7 +58,7 @@ local bain = bot.getUser(msg.sender_id.user_id)
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) then
 return bot.sendText(msg_chat_id,msg_id,"*⏏️| انت عبيط يسطا دا انت*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(6264438859) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(1488114134) then
 return bot.sendText(msg_chat_id,msg_id,"*يسطا دا مبرمج السورس ممكن يفشخني انا وانتا 😂😞*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(Fast) then
